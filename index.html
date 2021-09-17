@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
 
-        <title>Rubén Cosp | PORTAFOLIO</title>
-        <meta name="title" content="Rubén Cosp | PORTAFOLIO">
+        <title>Rubén Cosp</title>
+        <meta name="title" content="Rubén Cosp">
         <meta name="description" content="Página para mostrar algunos de mis conocimientos.">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,17 +15,18 @@
 
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://rcosp.github.io/">
-        <meta property="og:title" content="Rubén Cosp | PORTAFOLIO">
+        <meta property="og:title" content="Rubén Cosp">
         <meta property="og:description" content="Página para mostrar algunos de mis conocimientos.">
 
         <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Ubuntu:wght@400;500;700&amp;display=swap">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+
     </head>
 
     <body>
-
         <!--************-->
         <!--** NAVBAR **-->
         <!--************-->
@@ -34,10 +35,12 @@
             <div class="max-width">
                 <div class="logo" translate="no"><a href="#">Porta<span class="fancy">folio</span></a></div>
                 <ul class="menu">
-                    <li><a href="#home" class="menu-btn cambio">Inicio</a></li>
-                    <li><a href="#about" class="menu-btn cambio">Sobre mi</a></li>
-                    <li><a href="#skills" class="menu-btn cambio">Habilidades</a></li>
-                    <li><a href="#contact" class="menu-btn cambio">Contacto</a></li>
+                    <li><a href="#home" class="menu-btn">Inicio</a></li>
+                    <li><a href="#about" class="menu-btn">Sobre mi</a></li>
+                    <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+                    <li><a href="#projects" class="menu-btn">Proyectos</a></li>
+                    <li><a href="#achiev" class="menu-btn">Logros</a></li>
+                    <li><a href="#contact" class="menu-btn">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,14 +48,20 @@
         <!--******************-->
         <!--** HOME SECTION **-->
         <!--******************-->
-
+        
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div class="text-1">Hola, mi nombre es</div>
-                    <h1 class="text-2" translate="no">Rubén Cosp</h1>
-                    <div class="text-3">y soy <span class="typed fancy" translate="no"></span></div>
-                    <a class="btn" href="#contact">Contactame</a>
+                    <div>
+                        <h1 class="text-1" translate="no">Rubén Cosp</h1>
+                        <div class="text-2"><span class="typed fancy" translate="no"></span></div>
+                        <a class="btn" href="#contact">Contactame</a>
+                    </div>
+                    <div class="box">
+                        <span>▼</span>
+                        <span>▼</span>
+                        <span>▼</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,20 +71,20 @@
         <!--*******************-->
 
         <section id="about">
-            <div class="about glass max-width">
-                <h2 class="title"><b>Sobre mi</b></h2>
+            <div class="about glass max-width" data-aos="zoom-in-left">
+                <h2 class="title fancy">Sobre mi</h2>
                 <div class="about-content">
-                    <div class="column left">
-                        <img src="./assets/rbn.jpg" alt="Rubén Cosp">
+                    <div class="left">
+                        <img class="image" src="./assets/rbn.jpg" alt="Rubén Cosp">
                     </div>
-                    <div class="column right">
-                        <div class="subtitulo">Soy Rubén</div>
-                        <p><b class="fancy">Programador</b> recién titulado con muchas ganas de mejorar apasionado 
+                    <div class="right">
+                        <div class="subtitulo">Soy <b>Rubén</b>:</div>
+                        <p><b class="fancy">Programador</b> recién titulado con muchas ganas de mejorar, apasionado 
                             por este mundo desde muy joven. Me mantengo en constante aprendizaje, lo que me lleva a poder 
                             manejar diversas tecnologías, tanto de desarrollo de <b class="fancy">aplicaciones</b> como <b class="fancy">web.</b><br>
                             Esta ambición también me ha llevado a participar en varios concursos consiguiendo algunos reconocimientos.
                         </p>
-                        <a class="btn" href="./assets/CV-Rubén-Cosp.pdf">Descargar CV</a>
+                        <div class="boton"><a class="btn" href="./assets/CV-Rubén-Cosp.pdf">Descargar CV</a></div>
                     </div>
                 </div>
             </div>
@@ -86,85 +95,124 @@
         <!--********************-->
 
         <section id="skills">
-            <div class="skills glass max-width">
-                <h2 class="title">Mis habilidades</h2>
+            <div class="skills glass max-width" data-aos="zoom-in-right">
+                <h2 class="title fancy">Mis habilidades</h2>
                 <div class="skills-content">
-                    <div class="column left">
-                        <h3 class="text">Estos son los lenguajes y tecnologías que domino.</h3>
-                    </div>
                     <div>
-                        <ul>
-                            <li>
-                                <img src="./assets/skills/java.png" alt="Java">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/python.png" alt="Python">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/js.png" alt="JavaScript">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/html.png" alt="HTML5">
+                        <div class="subtitulo-2">Lenguajes y tecnologías que domino:</div>
+                        <div class="parent">
+                            <div class="child">
+                                <a title="Java" href="http://www.java.com"><img class="sk" src="./assets/skills/java.png" alt="Java"></a>
                             </div>
-                            <li>
-                                <img src="./assets/skills/css.png" alt="CSS">
+                            <div class="child">
+                                <a title="Python" href="https://www.python.org/"><img class="sk" src="./assets/skills/python.png" alt="Python"></a>
                             </div>
-                            <li>
-                                <img src="./assets/skills/php.png" alt="PHP">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/react.png" alt="React">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/vsc.png" alt="VisualStudioCode">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/eclipse.png" alt="Eclipse">
-                            </li>
-                            <li>
-                                <img src="./assets/skills/gh.png" alt="GitHub">
+                            <div class="child">
+                                <a title="JavaScript" href="https://www.javascript.com/"><img class="sk" src="./assets/skills/js.png" alt="JavaScript"></a>
                             </div>
-                            <li>
-                                <img src="./assets/skills/docker.png" alt="Docker">
-                            </li>
+                            <div class="child">
+                                <a title="HTML5" href="https://es.wikipedia.org/wiki/HTML5"><img class="sk" src="./assets/skills/html.png" alt="HTML5"></a>
+                            </div>
+                            <div class="child">
+                                <a title="CSS" href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada"><img class="sk" src="./assets/skills/css.png" alt="CSS"></a>
+                            </div>
+                            <div class="child">
+                                <a title="PHP" href="https://www.php.net/manual/es/intro-whatis.php"><img class="sk" src="./assets/skills/php.png" alt="PHP"></a>
+                            </div>
+                            <div class="child">
+                                <a title="React" href="https://es.reactjs.org/"><img class="sk" src="./assets/skills/react.png" alt="React"></a>
+                            </div>
+                            <div class="child">
+                                <a title="VisualStudioCode" href="https://code.visualstudio.com/"><img class="sk" src="./assets/skills/vsc.png" alt="VisualStudioCode"></a>
+                            </div>
+                            <div class="child">
+                                <a title="Eclipse" href="https://www.eclipse.org/"><img class="sk" src="./assets/skills/eclipse.png" alt="Eclipse"></a>
+                            </div>
+                            <div class="child">
+                                <a title="GitHub" href="https://github.com/"><img class="sk" src="./assets/skills/gh.png" alt="GitHub"></a>
+                            </div>
+                            <div class="child">
+                                <a title="Docker" href="https://www.docker.com/"><img class="sk" src="./assets/skills/docker.png" alt="Docker"></a>
+                            </div>
+                            <div class="child">
+                                <a title="Git" href="https://git-scm.com/"><img class="sk" src="./assets/skills/git.png" alt="Git"></a>
+                            </div>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-    
+
+        <!--**********************-->
+        <!--** PROJECTS SECTION **-->
+        <!--**********************-->
+
+        <section id="projects">
+            <div class="projects glass max-width" data-aos="zoom-in-left">
+                <h2 class="title fancy">Mis proyectos</h2>
+                <div class="">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!--**************************-->
+        <!--** ACHIEVEMENTS SECTION **-->
+        <!--**************************-->
+
+        <section id="achiev">
+            <div class="achiev glass max-width" data-aos="zoom-in-right">
+                <h2 class="title fancy">Logros</h2>
+                <div class="">
+                    
+                </div>
+            </div>
+        </section>
+
         <!--*********************-->
         <!--** CONTACT SECTION **-->
         <!--*********************-->
 
         <section id="contact">
-            <div class="contact glass max-width">
-                <h2 class="title">Contact me</h2>
+            <div class="contact glass max-width" data-aos="zoom-in-left">
+                <h2 class="title fancy">Contacto</h2>
                 <div class="contact-content">
 
-                    <div class="column left">
-                        <div class="text">Get in Touch</div>
-                        <p>
-                            Información de contacto</p>
-                        <div>
-                            <div>
-                                <i></i>
+                    <div class="left">
+                        <div class="subtitulo-2">Información de contacto:</div>
+                        <div class="iconos">
+                            <div class="fila">
+                                <i class="fas fa-user"></i>
                                 <div>
-                                    <div>Name</div>
-                                    <div>Rubén Cosp</div>
+                                    <div class="info-1 fancy">Nombre</div>
+                                    <div class="info-2">Rubén Cosp</div>
                                 </div>
                             </div>
-                            <div>
-                                <i></i>
+                            <div class="fila">
+                                <i class="fas fa-search-location"></i>
                                 <div>
-                                    <div>Address</div>
-                                    <div>Sabadell - Barcelona</div>
+                                    <div class="info-1 fancy">Dirección</div>
+                                    <div class="info-2">Sabadell - Barcelona</div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <i class="fas fa-at"></i>
+                                <div>
+                                    <div class="info-1 fancy">Correo</div>
+                                    <div class="info-2">ruben.cosp@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <div class="info-1 fancy">Teléfono</div>
+                                    <div class="info-2">+34-610-880-204</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column right">
+                    <div class="right">
                         <script>
                             window.onerror = new Function("return true");
 
@@ -177,25 +225,20 @@
                                 window.location.href = "mailto:" + link;
                             }
                         </script>
-                        <div class="text">Message me</div>
                         <form>
-                            <div class="fields">
-                                <div class="field name">
-                                    <input type="text" placeholder="Name" name="nombre" autocomplete="off" id="nombre" required="">
-                                </div>
-                                <div class="field email">
-                                    <p>Se usara el
-                                        Email/Correo de tu ordenador.</p>
+                            <div>
+                                <div class="field">
+                                    <input type="text" placeholder="Nombre" name="nombre" autocomplete="off" id="nombre" required="">
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" id="subject" autocomplete="off" required="">
+                                <input type="text" placeholder="Asunto" id="subject" autocomplete="off" required="">
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Message.." id="comment" required=""></textarea>
+                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Mensaje..." id="comment" required=""></textarea>
                             </div>
                             <div class="button-area">
-                                <button type="submit" onclick="sendMail(); return false">Send message</button>
+                                <button type="submit" onclick="sendMail(); return false">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -217,6 +260,8 @@
         <!--*************-->
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/89b091334e.js" crossorigin="anonymous"></script>
         <script src="./script.js"></script>
 
     </body>

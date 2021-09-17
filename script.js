@@ -1,13 +1,16 @@
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("nav");
+    header.classList.toggle("abajo", window.scrollY > 0)
+});
+
 const typed = new Typed('.typed', {
-    strings: ["desarrollador.", "diseñador.", "programador."],
+    strings: ["Desarrollador", "Diseñador", "Programador"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
 });
 
-const typed2 = new Typed('.typed2', {
-    strings: ["Desarrollador", "Diseñador", "Programador"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
+AOS.init({
+    offset: 250,
+    duration: 1000
 });

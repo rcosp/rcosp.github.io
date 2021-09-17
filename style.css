@@ -12,7 +12,7 @@
 
 body {
     top: 0px !important;
-    background: #020616;
+    background: #182046;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,7 +26,6 @@ body {
     text-align: center;
     background: linear-gradient(180deg, #39f1fe 0%, #4c38fd 74%);
     border-radius: 50px;
-    box-shadow: 0px 0px 40px rgb(65, 191, 250);
     letter-spacing: 1px;
 }
 
@@ -48,17 +47,22 @@ html {
 }
 
 .fancy {
-    background: linear-gradient(147deg, #39f1fe 0%, #4c38fd 74%);
+    background: linear-gradient(147deg, #39f1fe 5%, #4c38fd 74%);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 600; 
-    transition: all 0.3s ease;
 }
 
-.subtitulo{
-    font-size: 35px;
-    font-weight: 600;
+.subtitulo {
+    font-size: 30px;
+    font-weight: 400;
     margin-bottom: 15px;
+}
+
+.subtitulo-2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 /*****************\
@@ -70,15 +74,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #18248b;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #141e7a;
 }
 
 /**************\
@@ -92,6 +96,11 @@ html {
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+}
+
+.abajo {
+    background: #111;
+    padding: 20px 0;
 }
 
 .navbar .max-width {
@@ -120,7 +129,7 @@ html {
     transition: color 0.3s ease;
 }
 
-.navbar .menu li .cambio:hover {
+.menu-btn:hover {
     background: linear-gradient(147deg, #39f1fe 0%, #4c38fd 74%);
     transform: scale(1.25);
     padding: 5px;
@@ -153,22 +162,16 @@ html {
 }
 
 .text-1 {
-    font-size: 27px;
-}
-
-.text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.text-3 {
+.text-2 {
     font-size: 40px;
     margin: 5px 0;
     margin-bottom: 30px;
 }
-
-
 
 /****************\
 |    SECTIONS    |
@@ -179,12 +182,12 @@ section {
 }
 
 .glass {
-    background: rgba(211, 211, 211, 0.15);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5.0px);
     -webkit-backdrop-filter: blur(5.0px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     padding-top: 40px;
+    box-shadow: 0px 0px 18px rgb(61, 68, 68);
     padding-bottom: 40px;
 }
 
@@ -214,25 +217,26 @@ section {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #fff;
+    background: linear-gradient(147deg, #39f1fe 0%, #4c38fd 74%);
     transform: translateX(-50%);
 }
 
 /*__ABOUT__*/
 
 .about .about-content .left {
-    width: 45%;
+    width: 40%;
 }
 
 .about .about-content .left img {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
+    box-shadow: 0px 0px 18px rgb(39, 39, 39);
 }
 
 .about .about-content .right {
-    width: 55%;
+    width: 60%;
 }
 
 .about .about-content .right .text {
@@ -248,8 +252,131 @@ section {
 /*__SKILLS__*/
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+.parent{
+    margin: 10px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.child a{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    cursor: help;
+    box-shadow: 0px 0px 18px rgb(39, 39, 39);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5.0px);
+    -webkit-backdrop-filter: blur(5.0px);
+    border-radius: 10px;
+}
+
+/*__CONTACT__*/
+
+.iconos {
+    margin: 10px 0;
+}
+
+.fila {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.info-1 {
+    background: linear-gradient(90deg, #39f1fe 8%, #4c38fd 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-2 {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.contact .contact-content .left {
+    width: 50%;
+}
+
+.contact .contact-content .right {
+    width: 50%;
+}
+
+.contact .contact-content .fila i {
+    font-size: 25px;
+    color: #39f1fe;
+}
+
+.contact .right form .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #39f1fe !important;
+    
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border: 2px solid #4c38fd !important;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+.fields input, .field input, .field textarea{
+    color: white;
+    background: transparent;
+}
+
+.contact .right form  .button-area  button {
+    display: inline-flex;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #39f1fe 0%, #4c38fd 74%);
+    border-radius: 6px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.contact .right form .button-area button:hover {
+    transition: all 500ms;
+    background: linear-gradient(180deg, #39f1fe 35%, #4c38fd 80%);
+    box-shadow: 0px 0px 60px rgb(65, 191, 250);
 }
 
 /**************\
@@ -264,10 +391,202 @@ footer {
 }
 
 footer span a {
-    color: #4c38fd;
+    color: #39f1fe;
     text-decoration: none;
 }
 
 footer span a:hover {
     text-decoration: underline;
+}
+
+/*************\
+|    ARROW    |
+\*************/
+
+.box {
+    margin-left: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 30px 20px;
+  }
+  
+  .box span {
+    display: block;
+    margin: -10px;
+    font-size: 50px;
+    animation: animate 2s infinite;
+  }
+  
+  .box span:nth-child(1)
+  {
+    animation-delay: 0.1s;
+    color: #39f1fe;
+  }
+
+  .box span:nth-child(2)
+  {
+    animation-delay: 0.2s;
+    color: rgb(50, 123, 218);
+  }
+
+  .box span:nth-child(3)
+  {
+    animation-delay: 0.3s;
+    color: rgb(50, 61, 218);
+  }
+  
+  @keyframes animate
+  {
+    0%
+    {
+      opacity: 0;
+      transform: translate(0, -20px);
+    }
+    50%
+    {
+      opacity: 1;
+    }
+    100%
+    {
+      opacity: 0;
+      transform: translate(0, 20px);
+    }
+  }
+
+/******************\
+|    RESPONSIVE    |
+\******************/
+
+@media (max-width: 1100px) {
+    .menu {
+        display: none;
+    }
+
+    .text-1 {
+        font-size: 68px;
+    }
+    
+    .text-2 {
+        font-size: 33px;
+    }
+
+    .about .about-content .left {
+        width: 100%;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+    }
+
+    .about .about-content .left img {
+        height: 300px;
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .about .about-content .right .subtitulo {
+        margin-top: 15px;
+    }
+
+    .about .about-content .right .boton {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 905px) {
+    .text-1 {
+        font-size: 50px;
+    }
+    
+    .text-2 {
+        font-size: 25px;
+    }
+
+    .sk {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 710px) {
+    .contact .contact-content .left,
+    .contact .contact-content .right {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .about .about-content .left img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .box {
+        top: 90%;
+        left: 25%;
+    }
+
+    .box span {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .box {
+        left: 10%;
+    }
+
+    .text-1 {
+        font-size: 30px;
+    }
+    
+    .text-2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 13px 26px;
+    }
+
+    .about .about-content .left img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .subtitulo-2 {
+        font-size: 15px;
+    }
+
+    .sk {
+        height: 60px;
+        width: 60px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
 }

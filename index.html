@@ -12,6 +12,7 @@
         <meta name="author" content="ruben.cosp@gmail.com">
         <meta name="google-site-verification" content="CjI9NCFpq3twbC-9LrZTJZwI9THn-cLY75fl5rOpwGk" />
         <link rel="canonical" href="https://rcosp.github.io/">
+        <link rel="shortcut icon" href="./assets/favicon.ico" />
 
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://rcosp.github.io/">
@@ -34,6 +35,7 @@
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo" translate="no"><a href="#">Porta<span class="fancy">folio</span></a></div>
+                
                 <ul class="menu">
                     <li><a href="#home" class="menu-btn">Inicio</a></li>
                     <li><a href="#about" class="menu-btn">Sobre mi</a></li>
@@ -52,11 +54,9 @@
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div>
-                        <h1 class="text-1" translate="no">Rubén Cosp</h1>
-                        <div class="text-2"><span class="typed fancy" translate="no"></span></div>
-                        <a class="btn" href="#contact">Contactame</a>
-                    </div>
+                    <h1 class="text-1" translate="no">Rubén Cosp</h1>
+                    <div class="text-2"><span class="typed fancy" translate="no"></span></div>
+                    <a class="btn" href="#contact">Contactame</a>
                     <div class="box">
                         <span>▼</span>
                         <span>▼</span>
@@ -228,14 +228,14 @@
                         <form>
                             <div>
                                 <div class="field">
-                                    <input type="text" placeholder="Nombre" name="nombre" autocomplete="off" id="nombre" required="">
+                                    <input type="text" placeholder="Nombre" name="nombre" autocomplete="off" id="nombre">
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Asunto" id="subject" autocomplete="off" required="">
+                                <input type="text" placeholder="Asunto" id="subject" autocomplete="off">
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Mensaje..." id="comment" required=""></textarea>
+                                <textarea cols="30" rows="10" autocomplete="off" placeholder="Mensaje..." id="comment"></textarea>
                             </div>
                             <div class="button-area">
                                 <button type="submit" onclick="sendMail(); return false">Enviar</button>

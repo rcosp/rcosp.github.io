@@ -14,6 +14,7 @@ body {
     top: 0px !important;
     background: #182046;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .btn {
@@ -532,7 +533,7 @@ footer span a:hover {
 
     .box {
         top: 90%;
-        left: 25%;
+        margin: auto;
     }
 
     .box span {
@@ -541,9 +542,14 @@ footer span a:hover {
 
 }
 
-@media (max-width: 400px) {
-    .box {
-        left: 10%;
+@media (max-width: 418px) {
+    .navbar .logo a {
+        font-size: 25px;
+        margin-left: -20px;
+    }
+
+    .abajo {
+        padding: 40px 0 5px 0;
     }
 
     .text-1 {
@@ -581,8 +587,8 @@ footer span a:hover {
     }
 
     .sk {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 
     footer {

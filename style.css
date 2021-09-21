@@ -277,108 +277,21 @@ img {
     border-radius: 10px;
 }
 
-/*__CONTACT__*/
+/*__PROJECTS__*/
 
-.iconos {
-    margin: 10px 0;
-}
-
-.fila {
-    display: flex;
-    height: 65px;
+.projects-content {
     align-items: center;
 }
 
-.info-1 {
-    background: linear-gradient(90deg, #39f1fe 8%, #4c38fd 80%);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-left: 30px;
-    font-weight: 600;
-    font-size: 20px;
+.proyecto {
+    filter: grayscale(100%);
+    transition: 0.3s;
 }
 
-.info-2 {
-    margin-left: 30px;
-    font-size: 14px;
-}
-
-.contact .contact-content .left {
-    width: 50%;
-}
-
-.contact .contact-content .right {
-    width: 50%;
-}
-
-.contact .contact-content .fila i {
-    font-size: 25px;
-    color: #39f1fe;
-}
-
-.contact .right form .field {
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.contact .right form .textarea {
-    height: 80px;
-    width: 100%;
-}
-
-.contact .right form .field input,
-.contact .right form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    border: 2px solid #39f1fe !important;
-    
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus {
-    border: 2px solid #4c38fd !important;
-}
-
-.contact .right form .textarea textarea {
-    padding-top: 10px;
-    resize: none;
-}
-
-.contact .right form .button {
-    height: 47px;
-    width: 170px;
-}
-.fields input, .field input, .field textarea{
-    color: white;
-    background: transparent;
-}
-
-.contact .right form  .button-area  button {
-    display: inline-flex;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 30px;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(180deg, #39f1fe 0%, #4c38fd 74%);
-    border-radius: 6px;
-    letter-spacing: 1px;
-    border: none;
-}
-
-.contact .right form .button-area button:hover {
-    transition: all 500ms;
-    background: linear-gradient(180deg, #39f1fe 35%, #4c38fd 80%);
-    box-shadow: 0px 0px 60px rgb(65, 191, 250);
-}
+.proyecto:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+} 
 
 /*__ACHIEVEMENTS__*/
 
@@ -488,6 +401,109 @@ img {
 @keyframes zoom {
     0%{transform: scale(0);opacity: 0}
 	100%{transform: scale(1);opacity:1}
+}
+
+/*__CONTACT__*/
+
+.iconos {
+    margin: 10px 0;
+}
+
+.fila {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.info-1 {
+    background: linear-gradient(90deg, #39f1fe 8%, #4c38fd 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-2 {
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.contact .contact-content .left {
+    width: 50%;
+}
+
+.contact .contact-content .right {
+    width: 50%;
+}
+
+.contact .contact-content .fila i {
+    font-size: 25px;
+    color: #39f1fe;
+}
+
+.contact .right form .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #39f1fe !important;
+    
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border: 2px solid #4c38fd !important;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+.fields input, .field input, .field textarea{
+    color: white;
+    background: transparent;
+}
+
+.contact .right form  .button-area  button {
+    display: inline-flex;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #39f1fe 0%, #4c38fd 74%);
+    border-radius: 6px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.contact .right form .button-area button:hover {
+    transition: all 500ms;
+    background: linear-gradient(180deg, #39f1fe 35%, #4c38fd 80%);
+    box-shadow: 0px 0px 60px rgb(65, 191, 250);
 }
 
 /**************\

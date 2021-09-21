@@ -284,6 +284,8 @@ img {
 }
 
 .proyecto {
+    width: 200px;
+    height: 200px;
     filter: grayscale(100%);
     transition: 0.3s;
 }
